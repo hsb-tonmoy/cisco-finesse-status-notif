@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Cisco Phone Failure Notification",
+  "description": "Get notified when your Cisco Finesse goes down.",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "16": "images/cisco.svg",
+      "32": "images/cisco.svg",
+      "48": "images/cisco.svg",
+      "128": "images/cisco.svg"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://uccx1.tcom.wmich.edu:8445/desktop/container/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["beep.mp3"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"]
+}
