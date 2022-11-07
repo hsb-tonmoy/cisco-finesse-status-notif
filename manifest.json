@@ -5,10 +5,10 @@
   "version": "1.0",
   "action": {
     "default_icon": {
-      "16": "images/cisco.svg",
-      "32": "images/cisco.svg",
-      "48": "images/cisco.svg",
-      "128": "images/cisco.svg"
+      "16": "images/cisco-16.png",
+      "32": "images/cisco-32.png",
+      "48": "images/cisco-48.png",
+      "128": "images/cisco-128.png"
     }
   },
   "content_scripts": [
